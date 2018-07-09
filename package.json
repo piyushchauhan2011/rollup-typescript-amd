@@ -20,7 +20,9 @@
     "build": "npx rollup -c",
     "watch": "npx rollup -c -w",
     "dev": "npx npm-run-all --parallel start watch",
-    "start": "npx http-server -g",
+    "start": "npx http-server",
+    "start-gzip": "npx http-server -g",
+    "prod": "npx npm-run-all --parallel start-gzip watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
